@@ -4,10 +4,8 @@ export default function validateInfo(values) {
   // Username
   if(!values.name.trim()) {
     errors.name = 'Please input your name here';
-  } else if(values.name.length > 6) {
-    errors.name = 'You need more than 6 characters for your username'
-  }
-
+  } 
+  
   // Email
   if(!values.email) {
     errors.email = 'Please input your email here';
@@ -37,7 +35,7 @@ export default function validateInfo(values) {
     errors.retypePassword = 'Please re-type your password here';
   } else if(values.password !== values.retypePassword) {
     errors.retypePassword = 'Your password not match';
-  } else if(values.password == values.retypePassword) {
+  } else if(values.password === values.retypePassword) {
     errors.retypePassword = 'Your password match';
   }
   return errors;

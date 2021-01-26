@@ -1,6 +1,5 @@
 export default function validateInfo(values) {
   let errors = {}
-
   // Username
   if(!values.name.trim()) {
     errors.name = 'Please input your name here';
@@ -35,8 +34,7 @@ export default function validateInfo(values) {
     errors.retypePassword = 'Please re-type your password here';
   } else if(values.password !== values.retypePassword) {
     errors.retypePassword = 'Your password not match';
-  } else if(values.password === values.retypePassword) {
-    errors.retypePassword = 'Your password match';
-  }
+  } 
+  
   return errors;
 }

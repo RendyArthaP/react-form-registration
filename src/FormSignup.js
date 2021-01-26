@@ -4,8 +4,8 @@ import validate from './validateInfo';
 
 const FormSignup = ({submitForm}) => {
   const {handleChange, values, handleSubmit, errors} = useForm(
-    validate,
-    submitForm
+    submitForm,
+    validate
   )
 
   return (

@@ -9,7 +9,7 @@ const FormSignup = ({submitForm}) => {
   )
 
   return (
-    <div className="flex flex-col justify-center text-center border border-black w-1/3">
+    <div className="flex flex-col justify-center mx-auto mt-10 text-center border border-black sm:w-full md:w-1/3">
       <h1 className="text-2xl font-bold py-8">Sign Up Here</h1>
       <form 
         className="flex flex-col items-center"
@@ -20,7 +20,7 @@ const FormSignup = ({submitForm}) => {
           <input 
             type="text" 
             placeholder="Enter Your Username"
-            className="border border-black rounded w-64 p-1 hover:outline-none focus:outline-none"
+            className="sm:w-full md:w-64 border border-black rounded p-1 hover:outline-none focus:outline-none"
             name="name"
             value={values.name}
             onChange={handleChange}
@@ -32,7 +32,7 @@ const FormSignup = ({submitForm}) => {
           <input 
             type="Email" 
             placeholder="Enter Your Email"
-            className="border border-black rounded w-64 p-1 hover:outline-none focus:outline-none"
+            className="sm:w-full md:w-64 border border-black rounded p-1 hover:outline-none focus:outline-none"
             name="email"
             value={values.email}
             onChange={handleChange}
@@ -42,7 +42,7 @@ const FormSignup = ({submitForm}) => {
         <div className="flex flex-col pb-4">
           <label className="text-left">Born At:</label>
           <select 
-            className="border border-black rounded w-64 p-1 hover:outline-none focus:outline-none"
+            className="sm:w-full px-10 md:w-64 border border-black rounded p-1 hover:outline-none focus:outline-none"
             name="bornAt"
             value={values.bornAt}
             onChange={handleChange}
@@ -58,7 +58,7 @@ const FormSignup = ({submitForm}) => {
         <div className="flex flex-col pb-4">
           <label className="text-left">Gender</label>
           <select 
-            className="border border-black rounded w-64 p-1 hover:outline-none focus:outline-none"
+            className="sm:w-full md:w-64 border border-black rounded p-1 hover:outline-none focus:outline-none"
             name="gender"
             value={values.gender}
             onChange={handleChange}
@@ -74,7 +74,7 @@ const FormSignup = ({submitForm}) => {
           <input 
             type="password" 
             placeholder="Enter Your Password"
-            className="border border-black rounded w-64 p-1 hover:outline-none focus:outline-none"
+            className="sm:w-full md:w-64 border border-black roundedp-1 hover:outline-none focus:outline-none"
             name="password"
             value={values.password}
             onChange={handleChange}
@@ -86,7 +86,7 @@ const FormSignup = ({submitForm}) => {
           <input 
             type="password" 
             placeholder="Retype your password"
-            className="border border-black rounded w-64 p-1 hover:outline-none focus:outline-none"
+            className="sm:w-full md:w-64 border border-black rounded p-1 hover:outline-none focus:outline-none"
             name="retypePassword"
             value={values.retypePassword}
             onChange={handleChange}

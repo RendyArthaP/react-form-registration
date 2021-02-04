@@ -12,7 +12,7 @@ const Form = () => {
   return (
     <div className="">
       <div>
-        <span>X</span>
+        {/* <span>X</span> */}
         <div>
           <img src="" alt=""/>
         </div>
